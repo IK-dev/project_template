@@ -7,7 +7,8 @@ Some Tracked folder:
 - [x] `/pipeline` or `/dags`.
 - [x] `/src` or `/models` Abstraction layers allow separating code into parts holding related data and functionality.
 - [x] `/lib` Essential shared libraries and kernel modules.
-- [x] `/opt` Optional files such as third-party tools..
+- [x] `/opt` Optional files such as third-party tools.
+
 Some unTracked folder:
 - [ ] `/ods` or `/tmp` or `/data` or `/media`.
 - [ ] `/dev` facilitate access to every hardware device attached to the system (Device files).
