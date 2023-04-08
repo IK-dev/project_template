@@ -1,3 +1,18 @@
+# does not ignore the README.md file
+!README.md
+
+# matches any files and directories with the name tmp
+tmp/
+
+# Say that you want to ignore all files and directories that have a name starting with img. To do this, you would need to specify the name you want to ignore followed by the * wildcard selector like so:
+#img*
+
+# ignore all txt files that end with a .txt file extension
+*.txt
+
+
+
+#GitHub standart Python .gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
