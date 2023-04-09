@@ -24,22 +24,44 @@
    git config --global user.email "dev@example.com" # example
    git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
    git clone https://github.com/IK-dev/project_template.git
+   
+# How to Ignore a Previously Committed File
+# first need to update the .gitignore
+git rm --cached trash
+# The git rm command, along with the --cached option, deletes the file from the repository but does not delete the actual file. This means the file remains on your local system and in your working directory as an ignored file.
    ```
 
 
 <!-- Console commands (Shell) -->
 ## Console commands (Shell)
 ```shell {cmd=true }
+# pip freeze outputs a list of all installed Python modules with their versions
+pip freeze > requirements.txt
+
+# Installing Python Packages From a Requirements File
+pip install -r requirements.txt
+
+# Output a list of outdated packages
+pip list --outdated
 pip list
-pip uninstall peewee
-pip install peewee
-pip install peewee --upgrade
+
+# Upgrade the required package
+pip install -U fastapi
+# pip install --force-reinstall fastapi
+
+# If you need to check for missing dependencies, you can do so with the following command:
+python -m pip check
+
+pip uninstall fastapi
+pip install fastapi
+pip install fastapi --upgrade
 ```
 
 
 <!-- Project layout -->
 ## Project layout
     mkdocs.yml		# The configuration file?
+	requirements.txt # It is a simple text file that saves a list of the modules and packages required by your project.
 	main.py			# some main file.
     docs/
         README.md	# The documentation homepage.
@@ -48,6 +70,9 @@ pip install peewee --upgrade
     src/			# source code
 
 
+## Else
+https://towardsdatascience.com/python-project-template-for-a-quick-setup-d3ba1821e853
+https://github.com/MirYeh/PythonTemplate
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
